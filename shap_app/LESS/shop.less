@@ -1,0 +1,86 @@
+body{
+    background-color: #f7f7f7;
+}
+
+// 内容
+.content{
+    width: 100%;
+    background-color: #f6f6f6;
+    padding: 1em 0;
+    padding-bottom: 5em;
+    .container{
+        .list{
+            width: 100%;
+            li{
+                display: flex;
+                padding: 1em 1em;
+                background-color: #fff;
+                border-radius: 10px;
+                margin-bottom: 1em;
+                .left{
+                    width: 30%;
+                    height: 70%;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .right{
+                    padding-left: 1em;
+                    width: 70%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    .title{
+                        font-weight: bold;
+                        font-size: 1.2em;
+                        font-family: Kaiti;
+                    }
+                    .food{
+                        display: flex;
+                        justify-content: space-between;
+                        font-size: 10px;
+                        .YouYuan{
+                            font-family: YouYuan;
+                        }
+                        .glyphicon-fire{
+                            padding-right: .5em;
+                            color: red;
+                        }
+                        .glyphicon-map-marker{
+                            color: #cdcdcd;
+                            padding-right: .5em;
+                        }
+                    }
+                    .price{
+                        display: flex;
+                        justify-content: space-between;
+                        font-size: 10px;
+                    }
+                    .carry{
+                        font-size: 10px;
+                    }
+                    .discount{
+                        display: flex;
+                        justify-content: space-between;
+                        a{
+                            font-size: 10px;
+                            padding: .2em .5em;
+                            background-color: #fe6519;
+                            color: #fff;
+                            border-radius: 20px;
+                            letter-spacing: 1px;
+                            font-family: Kaiti;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// 字体
+.YouYuan{
+    font-family: YouYuan;
+}

@@ -1,0 +1,86 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "902042",
+      "name": "喜欢",
+      "font_class": "xihuan",
+      "unicode": "e633",
+      "unicode_decimal": 58931
+    },
+    {
+      "icon_id": "1132465",
+      "name": "浏览记录_sel",
+      "font_class": "liulanjilusel",
+      "unicode": "e630",
+      "unicode_decimal": 58928
+    },
+    {
+      "icon_id": "1354936",
+      "name": "余额",
+      "font_class": "yue",
+      "unicode": "e62a",
+      "unicode_decimal": 58922
+    },
+    {
+      "icon_id": "4300087",
+      "name": "帮助中心",
+      "font_class": "bangzhuzhongxin",
+      "unicode": "e63d",
+      "unicode_decimal": 58941
+    },
+    {
+      "icon_id": "8588805",
+      "name": "评价总结",
+      "font_class": "pingjiazongjie",
+      "unicode": "e629",
+      "unicode_decimal": 58921
+    },
+    {
+      "icon_id": "10357050",
+      "name": "设置",
+      "font_class": "shezhi",
+      "unicode": "e69f",
+      "unicode_decimal": 59039
+    },
+    {
+      "icon_id": "13478694",
+      "name": "语言",
+      "font_class": "A",
+      "unicode": "e6e8",
+      "unicode_decimal": 59112
+    },
+    {
+      "icon_id": "17967675",
+      "name": "语言",
+      "font_class": "yuyan",
+      "unicode": "eed4",
+      "unicode_decimal": 61140
+    },
+    {
+      "icon_id": "25001861",
+      "name": "会员中心",
+      "font_class": "huiyuanzhongxin",
+      "unicode": "fccd",
+      "unicode_decimal": 64717
+    },
+    {
+      "icon_id": "27285522",
+      "name": "消息通知",
+      "font_class": "a-ziyuan720",
+      "unicode": "e79c",
+      "unicode_decimal": 59292
+    },
+    {
+      "icon_id": "28690068",
+      "name": "余额",
+      "font_class": "yue1",
+      "unicode": "e65c",
+      "unicode_decimal": 58972
+    }
+  ]
+}
