@@ -1,0 +1,155 @@
+// 导航栏
+.sticky{
+        width: 100%;
+        background-color: #fff;
+}
+.navs{
+    height: 60px;
+    line-height: 60px;
+    li{
+        // width: 15%;
+        text-align: center;
+    }
+    li:nth-child(1){
+        // width: 10%;
+        text-align: left;
+        padding-left: 0;
+    }
+    .Selected{
+        color: #1db1f2;
+    }
+    a{
+        color: #000;
+    }
+    @media screen and (max-width:800px) {
+        padding: 0;
+            .item{
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                li{
+                    white-space: nowrap;
+                    // width: 20%;
+                }
+                li:nth-child(1){
+                    // width: 15% !important;
+                    text-align: left;
+                    padding-left: 0;
+                }
+                li:nth-child(3){
+                    // width: 15%;
+                    text-align: left;
+                    padding-left: 0;
+                }
+            } 
+    }
+}
+// 音乐
+.list{
+    width: 100%;
+    background-color: #f0f0f5;
+    padding-top: 2em;
+    padding-bottom: 3em;
+    .container{
+        background-color: #fff;
+        .title{
+            display: flex;
+            justify-content: space-between;
+            padding: 1em 0;
+            img{
+                margin-right: 10px;
+            }
+        }
+        .item{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            li{
+                width: 23%;
+                background-color: #fafafc;
+                display: flex;
+                flex-wrap: wrap;
+                padding: 0 1em;
+                margin-bottom: 1em;
+                &:hover{
+                    cursor:pointer;
+                }
+                &:hover >.imags img{
+                    
+                    transform: rotate(360deg);
+                }
+                .imags{
+                    width: 100%;
+                    text-align: center;
+                    border-radius: 100%;
+                    img{
+                        transition: all 20s
+                    }
+                }
+                .text{
+                    display: flex;
+                    flex-wrap: wrap;
+                    padding-bottom: 1em;
+                    div{
+                        width: 100%;
+                        font-size: .3em;
+                        color: #999;
+                    }
+                    .name{
+                        // font-size: 1em;
+                        font-weight: bold;
+                        color: #000;
+                    }
+                    .live{
+                        span{
+                            padding-left: 2em;
+                            color: #1db1f2;
+                        }
+                    }
+                    .shop{
+                        text-align: right;
+                        color: red;
+                        a{
+                            padding: .5em 2.5em;
+                            border: 1px solid #000;
+                            border-radius: 10px;
+                            color: #000;
+                            margin-left: 5px;
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+    @media screen and (max-width:800px) {
+        .container{
+            .item{
+                li{
+                    width: 31%;
+                }
+            }
+            
+        }
+    }
+    @media screen and (max-width:600px) {
+        .container{
+            .item{
+                li{
+                    width: 48%;
+                }
+            }
+            
+        }
+    }
+    
+}
+
+// 返回顶部
+.goto-top{
+    font-size: 2em;
+    color: #0b537c;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}

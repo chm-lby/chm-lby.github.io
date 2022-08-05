@@ -1,0 +1,965 @@
+// 导航栏
+.sticky{
+
+    width: 100%;
+    background-color: #fff;
+}
+.navs{
+height: 60px;
+line-height: 60px;
+li{
+    // width: 15%;
+    text-align: center;
+}
+li:nth-child(1){
+    // width: 10%;
+    text-align: left;
+    padding-left: 0;
+}
+.Selected{
+    color: #1db1f2;
+}
+a{
+    color: #000;
+}
+@media screen and (max-width:800px) {
+    padding: 0;
+        .item{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            li{
+                white-space: nowrap;
+                // width: 20%;
+            }
+            li:nth-child(1){
+                // width: 15% !important;
+                text-align: left;
+                padding-left: 0;
+            }
+            li:nth-child(3){
+                // width: 15%;
+                text-align: left;
+                padding-left: 0;
+            }
+        } 
+}
+}
+
+
+// 选择栏
+.choice{
+    width: 100%;
+    background-color: #f0f0f5;
+    padding: 2em 0;
+    .container{
+        background-color: #fff;
+        .display{
+            display: flex;
+            flex-wrap: wrap;
+            .classify,.ciky,.data{
+                width: 100%;
+                display: flex;
+                margin-top: 1.5em;
+            }
+            .classify{
+                font-size: 1.2em;
+                .title{
+                    width: 10%;
+                    text-align: right;
+                }
+                .list{
+                    display: flex;
+                    width: 80%;
+                    li{
+                        width: 10%;
+                        text-align: center;
+                    }
+                }
+            }
+            .ciky{
+                .title{
+                    width: 5%;
+                    text-align: right;
+                }
+                .list-more{
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                }
+                .list{
+                    width: 70%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    li{
+                        width: 10%;
+                        text-align: center;
+                        margin-bottom: 1em;
+                    }
+                }
+                .more{
+                    width: 6%;
+                    font-size: 1em;
+                    font-weight: bold;
+                    span:nth-child(1){
+                        margin-right: 1em;
+                    }
+                }
+            }
+            .data{
+                display: flex;
+                margin-top: 0em;
+                padding-bottom: 1.5em;
+                .title{
+                    width: 5%;
+                    text-align: right;
+                }
+                .data-time{
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+                    .left{
+                        width: 100%;
+                        li{
+                            width: 23%;
+                            text-align: center;
+                            &:nth-child(3){
+                                width: 40%;
+                            }
+                        }
+                        width: 30%;
+                        display: flex;
+                    }
+                    .right{
+                        width: 50%;
+                        display: flex;
+                        li{
+                            input{
+                                margin:0 1em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width:830px) {
+            .container{
+                .display{
+                    
+                    .ciky{
+                        .title{
+                            width: 10%;
+                        }
+                        .list-more{
+                            .list{
+                                width: 90%;
+                            }
+                        }
+                    }
+                    .data{
+                        .title{
+                            width: 10%;
+                        }
+                       .data-time{
+                        flex-wrap: wrap;
+                        .left{
+                            width: 100%;
+                        }
+                        .right{
+                            width: 100%;
+                            margin-top: 2em;
+                        }
+                       } 
+                    }
+                }
+            }
+        }
+    @media screen and (max-width:530px){
+        .container{
+            .display{
+                .classify{
+                        .list{
+                            li{
+                                width: 25%;
+                            }
+                        }
+                    
+                }
+                .ciky{
+                    .title{
+                        width: 10%;
+                    }
+                    .list-more{
+                        .list{
+                            width: 90%;
+                            li{
+                                width: 25%;
+                            }
+                        }
+                    }
+                }
+                .data{
+                    margin-top: 2em;
+                    .title{
+                        width: 10%;
+                    }
+                   .data-time{
+                    flex-wrap: wrap;
+                    .left{
+                        width: 100%;
+                        li{
+                            width: 27%;
+                        }
+                    }
+                    .right{
+                        width: 100%;
+                        margin-top: 2em;
+                        display: flex;
+                        flex-wrap: wrap;
+                        li{
+                            width: 100%;
+                            &:nth-child(1){
+                                text-align: left;
+                                margin-bottom: 1em;
+
+                            }
+                            &:nth-child(2){
+                                text-align: right;
+                                
+                            }
+                        }
+                    }
+                   } 
+                }
+            }
+        }
+    }
+}
+// 推荐栏
+.recommend{
+    width: 100%;
+    background-color: #f0f0f5;
+    padding-bottom: 2em;
+    .container{
+        background-color: #fff;
+        padding: 0;
+    }
+    .list{
+        width: 100%;
+        display: flex;
+        .active{
+            background-color: #ddd;
+        }
+        li{
+            width: 15%;
+            text-align: center;
+            a{
+                width: 100%;
+                color: #000;
+                padding: 1em 0em;
+                
+            }
+            &:hover{
+                background-color: #ddd;
+            }
+
+        }
+    }
+    @media screen and (max-width:650px) {
+        .container{
+            .list{
+                li{
+                    width: 25%;
+                }
+                justify-content: space-between;
+            }
+        }
+    }
+}
+
+
+//演唱会
+.concert{
+    width: 100%;
+    background-color:  #f0f0f5;
+    .container{
+        padding: 0;
+        .display{
+            display: flex;
+            justify-content: space-between;
+            //场次
+            .Sessions{
+                width: 65%;
+                // 第一场
+                .one{
+                    width: 100%;
+                    display: flex;
+                    padding-bottom:2em ;
+                    .images{
+                        position: relative;
+                        width: 30%;
+                        background-color: #fff ;
+                        flex-shrink: 0;
+                        display: flex;
+                        align-items: center;
+                    }
+                    .text{
+                        width: 70%;
+                        background-color: #fff;
+                        display: flex;
+                        flex-direction: column;
+                        padding: 0 2em;
+                        .title{
+                            width: 77%;
+                            letter-spacing: 1px;
+                            font-size: 1em;
+                            margin-top: 1em;
+                        }
+                        .name{
+                            color: #999;
+                            font-size: .7em;
+                        }
+                        .data{
+                            color: #666;
+                            font-size: .8em;
+                            margin-top: 1.5em;
+                        }
+                        .place{
+                            font-size: .8em;
+                            color: #999;
+                        }
+                        .price{
+                            color:red;
+                            margin-top: 1.5em;
+                            span{
+                                color: #1db1f2;
+                                margin-left: 2em;
+                            }
+                        }
+                        .ticket{
+                            width: 90%;
+                            display: flex;
+                            justify-content: space-between;
+                            font-size: .3em;
+                            align-items: center;
+                            padding-bottom: 2em;
+                            color: #999;
+                            a{
+                                padding: 2em 6em;
+                                background-color: #000;
+                                color: #fff;
+                                font-size: 1em;
+                            }
+                        }
+                    }
+                }
+                // 第二场
+                .two{
+                    width: 100%;
+                    display: flex;
+                    padding-bottom:2em ;
+                    .images{
+                        position: relative;
+                        width: 30%;
+                        background-color: #fff ;
+                        flex-shrink: 0;
+                        display: flex;
+                        align-items: center;
+                    }
+                    .text{
+                        width: 70%;
+                        background-color: #fff;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-end;
+                        padding: 0 2em;
+                        .title{
+                            width: 77%;
+                            letter-spacing: 1px;
+                            font-size: 1em;
+                            margin-top: 1em;
+                            text-align: right;
+                        }
+                        .name{
+                            color: #999;
+                            font-size: .7em;
+                        }
+                        .data{
+                            color: #666;
+                            font-size: .8em;
+                            margin-top: 1.5em;
+                        }
+                        .place{
+                            font-size: .8em;
+                            color: #999;
+                        }
+                        .price{
+                            color:red;
+                            margin-top: 1.5em;
+                            span{
+                                color: #1db1f2;
+                                margin-right: 2em;
+                            }
+                        }
+                        .ticket{
+                            width: 90%;
+                            display: flex;
+                            justify-content: space-between;
+                            font-size: .3em;
+                            align-items: center;
+                            padding-bottom: 2em;
+                            color: #999;
+                            a{
+                                padding: 2em 6em;
+                                background-color: #000;
+                                color: #fff;
+                                font-size: 1em;
+                            }
+                        }
+                    }
+                }
+                // 第三场
+                .three{
+                    width: 100%;
+                    display: flex;
+                    padding-bottom:2em ;
+                    .images{
+                        position: relative;
+                        width: 30%;
+                        background-color: #fff ;
+                        flex-shrink: 0;
+                        display: flex;
+                        align-items: center;
+                    }
+                    .text{
+                        width: 70%;
+                        background-color: #fff;
+                        display: flex;
+                        flex-direction: column;
+                        padding: 0 2em;
+                        .title{
+                            width: 77%;
+                            letter-spacing: 1px;
+                            font-size: 1em;
+                            margin-top: 1em;
+                        }
+                        .name{
+                            color: #999;
+                            font-size: .7em;
+                        }
+                        .data{
+                            color: #666;
+                            font-size: .8em;
+                            margin-top: 1.5em;
+                        }
+                        .place{
+                            font-size: .8em;
+                            color: #999;
+                        }
+                        .price{
+                            color:red;
+                            margin-top: 1.5em;
+                            span{
+                                color: #1db1f2;
+                                margin-right: 2em;
+                            }
+                        }
+                        .ticket{
+                            width: 90%;
+                            display: flex;
+                            justify-content: space-between;
+                            font-size: .3em;
+                            align-items: center;
+                            padding-bottom: 2em;
+                            color: #999;
+                            a{
+                                padding: 2em 6em;
+                                background-color: #000;
+                                color: #fff;
+                                font-size: 1em;
+                            }
+                        }
+                    }
+                }
+                // 第四场
+                .four{
+                    width: 100%;
+                    display: flex;
+                    padding-bottom:2em ;
+                    .images{
+                        position: relative;
+                        width: 30%;
+                        background-color: #fff ;
+                        flex-shrink: 0;
+                        display: flex;
+                        align-items: center;
+                    }
+                    .text{
+                        width: 70%;
+                        background-color: #fff;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-end;
+                        padding: 0 2em;
+                        .title{
+                            width: 77%;
+                            letter-spacing: 1px;
+                            font-size: 1em;
+                            margin-top: 1em;
+                            text-align: right;
+                        }
+                        .name{
+                            color: #999;
+                            font-size: .7em;
+                        }
+                        .data{
+                            color: #666;
+                            font-size: .8em;
+                            margin-top: 1.5em;
+                        }
+                        .place{
+                            font-size: .8em;
+                            color: #999;
+                        }
+                        .price{
+                            color:red;
+                            margin-top: 1.5em;
+                            span{
+                                color: #1db1f2;
+                                margin-right: 2em;
+                            }
+                        }
+                        .ticket{
+                            width: 90%;
+                            display: flex;
+                            justify-content: space-between;
+                            font-size: .3em;
+                            align-items: center;
+                            padding-bottom: 2em;
+                            color: #999;
+                            a{
+                                padding: 2em 6em;
+                                background-color: #000;
+                                color: #fff;
+                                font-size: 1em;
+                            }
+                        }
+                    }
+                }
+                // 第五场
+                .five{
+                    width: 100%;
+                    display: flex;
+                    padding-bottom:2em ;
+                    .images{
+                        position: relative;
+                        width: 30%;
+                        background-color: #fff ;
+                        flex-shrink: 0;
+                        display: flex;
+                        align-items: center;
+                    }
+                    .text{
+                        width: 70%;
+                        background-color: #fff;
+                        display: flex;
+                        flex-direction: column;
+                        padding: 0 2em;
+                        .title{
+                            width: 77%;
+                            letter-spacing: 1px;
+                            font-size: 1em;
+                            margin-top: 1em;
+                        }
+                        .name{
+                            color: #999;
+                            font-size: .7em;
+                        }
+                        .data{
+                            color: #666;
+                            font-size: .8em;
+                            margin-top: 1.5em;
+                        }
+                        .place{
+                            font-size: .8em;
+                            color: #999;
+                        }
+                        .price{
+                            color:red;
+                            margin-top: 1.5em;
+                            span{
+                                color: #1db1f2;
+                                margin-right: 2em;
+                            }
+                        }
+                        .ticket{
+                            width: 90%;
+                            display: flex;
+                            justify-content: space-between;
+                            font-size: .3em;
+                            align-items: center;
+                            padding-bottom: 2em;
+                            color: #999;
+                            a{
+                                padding: 2em 6em;
+                                background-color: #000;
+                                color: #fff;
+                                font-size: 1em;
+                            }
+                        }
+                    }
+                }
+                // 第六场
+                .six{
+                    width: 100%;
+                    display: flex;
+                    padding-bottom:2em ;
+                    .images{
+                        position: relative;
+                        width: 30%;
+                        background-color: #fff ;
+                        flex-shrink: 0;
+                        display: flex;
+                        align-items: center;
+                    }
+                    .text{
+                        width: 70%;
+                        background-color: #fff;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-end;
+                        padding: 0 2em;
+                        .title{
+                            width: 77%;
+                            letter-spacing: 1px;
+                            font-size: 1em;
+                            margin-top: 1em;
+                            text-align: right;
+                        }
+                        .name{
+                            color: #999;
+                            font-size: .7em;
+                        }
+                        .data{
+                            color: #666;
+                            font-size: .8em;
+                            margin-top: 1.5em;
+                        }
+                        .place{
+                            font-size: .8em;
+                            color: #999;
+                        }
+                        .price{
+                            color:red;
+                            margin-top: 1.5em;
+                            span{
+                                color: #1db1f2;
+                                margin-right: 2em;
+                            }
+                        }
+                        .ticket{
+                            width: 90%;
+                            display: flex;
+                            justify-content: space-between;
+                            font-size: .3em;
+                            align-items: center;
+                            padding-bottom: 2em;
+                            color: #999;
+                            a{
+                                padding: 2em 6em;
+                                background-color: #000;
+                                color: #fff;
+                                font-size: 1em;
+                            }
+                        }
+                    }
+                }
+                //第七场
+                .seven{
+                    width: 100%;
+                    display: flex;
+                    padding-bottom:2em ;
+                    .images{
+                        position: relative;
+                        width: 30%;
+                        background-color: #fff ;
+                        flex-shrink: 0;
+                        display: flex;
+                        align-items: center;
+                    }
+                    .text{
+                        width: 70%;
+                        background-color: #fff;
+                        display: flex;
+                        flex-direction: column;
+                        padding: 0 2em;
+                        .title{
+                            width: 77%;
+                            letter-spacing: 1px;
+                            font-size: 1em;
+                            margin-top: 1em;
+                        }
+                        .name{
+                            color: #999;
+                            font-size: .7em;
+                        }
+                        .data{
+                            color: #666;
+                            font-size: .8em;
+                            margin-top: 1.5em;
+                        }
+                        .place{
+                            font-size: .8em;
+                            color: #999;
+                        }
+                        .price{
+                            color:red;
+                            margin-top: 1.5em;
+                            span{
+                                color: #1db1f2;
+                                margin-right: 2em;
+                            }
+                        }
+                        .ticket{
+                            width: 90%;
+                            display: flex;
+                            justify-content: space-between;
+                            font-size: .3em;
+                            align-items: center;
+                            padding-bottom: 2em;
+                            color: #999;
+                            a{
+                                padding: 2em 6em;
+                                background-color: #000;
+                                color: #fff;
+                                font-size: 1em;
+                            }
+                        }
+                    }
+                }
+                // 第八场
+                .eight{
+                    width: 100%;
+                    display: flex;
+                    padding-bottom:2em ;
+                    .images{
+                        position: relative;
+                        width: 30%;
+                        background-color: #fff ;
+                        flex-shrink: 0;
+                        display: flex;
+                        align-items: center;
+                    }
+                    .text{
+                        width: 70%;
+                        background-color: #fff;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-end;
+                        padding: 0 2em;
+                        .title{
+                            width: 77%;
+                            letter-spacing: 1px;
+                            font-size: 1em;
+                            margin-top: 1em;
+                            text-align: right;
+                        }
+                        .name{
+                            color: #999;
+                            font-size: .7em;
+                        }
+                        .data{
+                            color: #666;
+                            font-size: .8em;
+                            margin-top: 1.5em;
+                        }
+                        .place{
+                            font-size: .8em;
+                            color: #999;
+                        }
+                        .price{
+                            color:red;
+                            margin-top: 1.5em;
+                            span{
+                                color: #1db1f2;
+                                margin-right: 2em;
+                            }
+                        }
+                        .ticket{
+                            width: 90%;
+                            display: flex;
+                            justify-content: space-between;
+                            font-size: .3em;
+                            align-items: center;
+                            padding-bottom: 2em;
+                            color: #999;
+                            a{
+                                padding: 2em 6em;
+                                background-color: #000;
+                                color: #fff;
+                                font-size: 1em;
+                            }
+                        }
+                    }
+                }
+                // 更多
+                .more{
+                    text-align: center;
+                    
+                }
+            }
+        //侧边栏
+            .sidebar{
+                width: 30%;
+                background-color: #fff;
+                padding: 2em 1.5em;
+                height: 47em;
+                .container{
+                    width: 100%;
+                    .title{
+                        width: 80%;
+                        margin:  0 auto;
+                        text-align: center;
+                        margin-bottom: 2em;
+                    }
+                    .list{
+                        li{
+                            display: flex;
+                            margin-bottom: 1em;
+                            .images{
+                                width: 30%;
+                                // img{
+                                //     width: 100%;
+                                //     height: 100%;
+                                // }
+                            }
+                            .text{
+                                width: 70%;
+                                padding-left:1em ;
+                                span{
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                    width: 100%;
+                                    color: #999;
+                                    font-size: .5em;
+                                }
+                                .top{
+                                    color: #000;
+                                    font-size: 1em;
+                                }
+                                .data{
+                                    margin-top: 2em;
+                                }
+                                .price{
+                                    width: 65%;
+                                    display: flex;
+                                    justify-content: space-between;
+                                    margin-top: 2em;
+                                    color: red;
+                                    span{
+                                        width: 40%;
+                                        
+                                        &:nth-child(1){
+                                            color: #1db1f2;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width:950px) {
+    // 演唱会的媒体查询
+    .concert{
+        .container{
+            .display{
+                flex-wrap: wrap;
+                .Sessions{
+                    width: 100%;
+                }
+                .sidebar{
+                    width: 100%;
+                    height: auto;
+                    .container{
+                        .list{
+                            display: flex;
+                            flex-wrap: wrap;
+                            li{ 
+                                width: 50%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:730px) {
+    .concert{
+        .container{
+            .display{
+                .Sessions{
+                    .one,.two,.three,.four,.five,.six,.seven,.eight{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        .images{
+                            width: 90%;
+                            justify-content: center;
+                        }
+                        .text{
+                            width: 90%;
+                            // align-items: stretch
+                        }
+                        
+                    }
+                    .two,.four,.six,.eight{
+                        flex-direction: column-reverse;
+                        .text{
+                            align-items: stretch;
+                            .title{
+                                text-align: left;
+                            }
+                            .ticket{
+                                flex-direction: row-reverse;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+@media (max-width:600px) {
+    .concert{
+        .container{
+            .display{
+                .Sessions{
+                    .text{
+                        padding: 1em !important;
+                    }
+                }
+                .sidebar{
+                    .container{
+                        .list{
+                            li{
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

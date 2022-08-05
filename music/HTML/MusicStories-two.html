@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spirit8</title>
+    <!-- 引入bootstrap -->
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <!-- 引入动画样式 -->
+    <link rel="stylesheet" href="../wowjs/wowjs/animate/animate.min.css">
+    <!-- 引入重置样式 -->
+    <link rel="stylesheet" href="../CSS/reset.css">
+    <!-- 引入自己的样式 -->
+    <link rel="stylesheet/less" href="../LESS/MusicStories-two.less">
+    <!-- 引入公共样式 -->
+    <link rel="stylesheet/less" type="text/less" href="../LESS/header-footer.less">
+</head>
+<body>
+    <!-- 公共的头部导航 -->
+    <header class="navbar navbar-default header sticky" id="header">
+        <div class="container">
+          <!-- 移动端的三条线 -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <!-- logo -->
+            <a class="navbar-brand" href="#"><img src="../img/logo.png" alt=""></a>
+          </div>
+      
+         <!-- 左边导航栏 -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li ><a href="../index.html">发现</a></li>
+              <li class="Selected"><a href="#">我的音乐</a></li>
+              <li><a href="../HTML/Original music.html">分类</a></li>
+              <li ><a href="../HTML/album.html">专辑</a></li>
+              <li><a href="./Music community.html">音乐社区</a></li>
+              <li><a href="#">活动</a></li>
+              <li><a href="#">商城</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right user">
+              <li><a href="#" class="login">登录</a></li>
+              <li><a href="#">/</a></li>
+              <li><a href="#">注册</a></li>
+            </ul>
+            <form class="navbar-form navbar-left navbar-right">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="梦想的声音第二季">
+                <div class="Search-icon "><img src="../img/search_03.jpg" alt=""></div>
+              </div>
+            </form>
+
+          </div>
+        </div>
+    </header>
+    <!-- 导航栏 -->
+    <div class="container">
+        <nav class="container navs">
+          <ul class=" nav-pills item">
+            <li role="presentation" class="col-lg-1 col-md-2 "><a href="../index.html">发现</a></li>
+            <li role="presentation" class="col-lg-1 col-md-2"><a href="../HTML/MusicStories-two.html" class="Selected">我的音乐</a></li>
+            <li role="presentation" class="col-lg-1 col-md-2"><a href="../HTML/Original music.html">分类</a></li>
+            <li role="presentation" class="col-lg-1 col-md-2"><a href="../HTML/album.html">专辑</a></li>
+          </ul>
+        </nav>
+      </div>
+    <!-- 分割线 -->
+    <hr >
+    <div class="banner">
+        <div class="container">
+            <div class="display">
+                <div class="left">
+                    <div class="img">
+                        <img src="../img/MusicStories-two/banner.png" alt="">
+                    </div>
+                    <div class="modular">
+                        <div class="text">
+                            开心就拍拍手
+                            <span>徐真真 -</span>
+                            <span>xv zhenzhen</span>
+                        </div>
+                        <div class="icon">
+                            <span class="glyphicon glyphicon-play-circle"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="top">
+                        <div class="img">
+                            <img src="../img/MusicStories-two/2017_03.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            开心就拍拍手
+                            <span>徐真真</span>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <span>   人生不可能一帆风顺，你会选择什么态度去面对？有人会重新调整的状态投入寻找理想生活，有人则一蹶不振放弃自己坚持的东西。开心乐观的信仰，有时比黄金珍贵，徐真真用一首郎朗上口的RAP来告诉你看似复杂却又浅显的道理，轻快的flow与积极向上的歌词让人一秒就能豁然开朗，和真真的笑容一样像阳光般照耀着你，驱散你内心的阴霾。今天，我想看到新的你，寒冷里也别忘记去时候晒晒太阳。</span>
+                    </div>
+                    <div class="bottom">
+                        <span>2017-12-26</span>
+                        <span><img src="../img/MusicStories-two/message.png" alt=""></span>
+                        <span><img src="../img/MusicStories-two/share.png" alt=""></span>
+                        <span><img src="../img/MusicStories-two/live (1).png" alt=""></span>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <!-- 内容 -->
+    <div class="content">
+      <div class="container">
+        <!-- 列表 -->
+        <ul class="list">
+          <!-- 一 -->
+          <li id="li" class="wow fadeIn" data-wow-delay=".2s">
+            <div class="imgg">
+              <img src="../img/MusicStories-two/content-1.png" alt="">
+              <audio controls="controls" id="audio">
+                <source src="../music/Beyond-光辉岁月.flac" type="audio/mp3" />
+              Your browser does not support this audio format.
+              </audio>
+            </div>
+            <div class="text">
+              <div class="left">
+                <div class="title">
+                  红头发
+                </div>
+                <span>王艺洁</span>
+                <span>有时候我们在真实世界里丢失了一些东西，在梦里也许可以被找回。何晓河用最真实赤裸的梦境世界。这个梦境无比轻柔，像一张张柔软的毛毯</span>
+                <span><img src="../img/MusicStories-two/date.png" alt=""> 2017-12-25</span>
+              </div>
+              <div class="right">
+                <div class="img"><img src="../img/MusicStories-two/message2.png" alt=""></div>
+                <div><img src="../img/MusicStories-two/share2.png" alt=""></div>
+                <div><img src="../img/MusicStories-two/hot.png" alt=""></div>
+              </div>
+            </div>
+            <div class="live"><img src="../img/MusicStories-two/live (2).png" alt=""></div>
+          </li>
+          <!-- 二 -->
+          <li id="li" class="wow fadeIn" data-wow-delay=".3s">
+            <div class="imgg">
+              <img src="../img/MusicStories-two/content-2png.png" alt="">
+              <audio controls="controls" id="audio">
+                <source src="../music/Beyond-光辉岁月.flac" type="audio/mp3" />
+              Your browser does not support this audio format.
+              </audio>
+            </div>
+            <div class="text">
+              <div class="left">
+                <div class="title">
+                  The Seaside bus
+                </div>
+                <span>Doris何小河</span>
+                <span>有时候我们在真实世界里丢失了一些东西，在梦里也许可以被找回。何晓河用最真实赤裸的梦境世界。这个梦境无比轻柔，像一张张柔软的毛毯</span>
+                <span><img src="../img/MusicStories-two/date.png" alt=""> 2017-12-24</span>
+              </div>
+              <div class="right">
+                <div class="img"><img src="../img/MusicStories-two/message2.png" alt=""></div>
+                <div><img src="../img/MusicStories-two/share2.png" alt=""></div>
+                <div><img src="../img/MusicStories-two/hot.png" alt=""></div>
+              </div>
+            </div>
+            <div class="live"><img src="../img/MusicStories-two/live (2).png" alt=""></div>
+          </li>
+          <!-- 三 -->
+          <li id="li" class="wow fadeIn" data-wow-delay=".4s">
+            <div class="imgg">
+              <img src="../img/MusicStories-two/content-3.png" alt="">
+              <audio controls="controls" id="audio">
+                <source src="../music/Beyond-光辉岁月.flac" type="audio/mp3" />
+              Your browser does not support this audio format.
+              </audio>
+            </div>
+            <div class="text">
+              <div class="left">
+                <div class="title">
+                  青城山
+                </div>
+                <span>鹤这豹脾气</span>
+                <span>有时候我们在真实世界里丢失了一些东西，在梦里也许可以被找回。何晓河用最真实赤裸的梦境世界。这个梦境无比轻柔，像一张张柔软的毛毯</span>
+                <span><img src="../img/MusicStories-two/date.png" alt=""> 2017-12-23</span>
+              </div>
+              <div class="right">
+                <div class="img"><img src="../img/MusicStories-two/message2.png" alt=""></div>
+                <div><img src="../img/MusicStories-two/share2.png" alt=""></div>
+                <div><img src="../img/MusicStories-two/hot.png" alt=""></div>
+              </div>
+            </div>
+            <div class="live"><img src="../img/MusicStories-two/live (2).png" alt=""></div>
+          </li>
+          <!-- 四 -->
+          <li id="li" class="wow fadeIn" data-wow-delay=".5s">
+            <div class="imgg">
+              <img src="../img/MusicStories-two/content-4.png" alt="">
+              <audio controls="controls">
+                <source src="../music/Beyond-光辉岁月.flac" type="audio/mp3" />
+              Your browser does not support this audio format.
+              </audio>
+            </div>
+            <div class="text">
+              <div class="left">
+                <div class="title">
+                  Flo Rida
+                </div>
+                <span>Higher Borther</span>
+                <span>有时候我们在真实世界里丢失了一些东西，在梦里也许可以被找回。何晓河用最真实赤裸的梦境世界。这个梦境无比轻柔，像一张张柔软的毛毯</span>
+                <span><img src="../img/MusicStories-two/date.png" alt=""> 2017-12-22</span>
+              </div>
+              <div class="right">
+                <div class="img"><img src="../img/MusicStories-two/message2.png" alt=""></div>
+                <div><img src="../img/MusicStories-two/share2.png" alt=""></div>
+                <div><img src="../img/MusicStories-two/hot.png" alt=""></div>
+              </div>
+            </div>
+            <div class="live"><img src="../img/MusicStories-two/live (2).png" alt=""></div>
+          </li>
+          <!-- 五 -->
+          <li id="li" class="wow fadeIn" data-wow-delay=".6s">
+            <div class="imgg">
+              <img src="../img/MusicStories-two/content-5.png" alt="">
+              <audio controls="controls">
+                <source src="../music/Beyond-光辉岁月.flac" type="audio/mp3" />
+              Your browser does not support this audio format.
+              </audio>
+            </div>
+            <div class="text">
+              <div class="left">
+                <div class="title">
+                  很可爱的歌
+                </div>
+                <span>Lu1/梁晓雪</span>
+                <span>有时候我们在真实世界里丢失了一些东西，在梦里也许可以被找回。何晓河用最真实赤裸的梦境世界。这个梦境无比轻柔，像一张张柔软的毛毯</span>
+                <span><img src="../img/MusicStories-two/date.png" alt=""> 2017-12-21</span>
+              </div>
+              <div class="right">
+                <div class="img"><img src="../img/MusicStories-two/message2.png" alt=""></div>
+                <div><img src="../img/MusicStories-two/share2.png" alt=""></div>
+                <div><img src="../img/MusicStories-two/hot.png" alt=""></div>
+              </div>
+            </div>
+            <div class="live"><img src="../img/MusicStories-two/live (2).png" alt=""></div>
+          </li>
+          <!-- 六 -->
+          <li id="li" class="wow fadeIn" data-wow-delay=".7s">
+            <div class="imgg">
+              <img src="../img/MusicStories-two/content-6.png" alt="">
+              <audio controls="controls">
+                <source src="../music/Beyond-光辉岁月.flac" type="audio/mp3" />
+              Your browser does not support this audio format.
+              </audio>
+            </div>
+            <div class="text">
+              <div class="left">
+                <div class="title">
+                  Sky 
+                </div>
+                <span>大魔王</span>
+                <span>有时候我们在真实世界里丢失了一些东西，在梦里也许可以被找回。何晓河用最真实赤裸的梦境世界。这个梦境无比轻柔，像一张张柔软的毛毯</span>
+                <span><img src="../img/MusicStories-two/date.png" alt=""> 2017-12-20</span>
+              </div>
+              <div class="right">
+                <div class="img"><img src="../img/MusicStories-two/message2.png" alt=""></div>
+                <div><img src="../img/MusicStories-two/share2.png" alt=""></div>
+                <div><img src="../img/MusicStories-two/hot.png" alt=""></div>
+              </div>
+            </div>
+            <div class="live"><img src="../img/MusicStories-two/live (2).png" alt=""></div>
+          </li>
+          <!-- 七 -->
+          <li id="li" class="wow fadeIn" data-wow-delay=".8s">
+            <div class="imgg">
+              <img src="../img/MusicStories-two/content-7.png" alt="">
+              <audio controls="controls">
+                <source src="../music/Beyond-光辉岁月.flac" type="audio/mp3" />
+              Your browser does not support this audio format.
+              </audio>
+            </div>
+            <div class="text">
+              <div class="left">
+                <div class="title">
+                  静下来
+                </div>
+                <span>赵雷</span>
+                <span>有时候我们在真实世界里丢失了一些东西，在梦里也许可以被找回。何晓河用最真实赤裸的梦境世界。这个梦境无比轻柔，像一张张柔软的毛毯</span>
+                <span><img src="../img/MusicStories-two/date.png" alt=""> 2017-12-25</span>
+              </div>
+              <div class="right">
+                <div class="img"><img src="../img/MusicStories-two/message2.png" alt=""></div>
+                <div><img src="../img/MusicStories-two/share2.png" alt=""></div>
+                <div><img src="../img/MusicStories-two/hot.png" alt=""></div>
+              </div>
+            </div>
+            <div class="live"><img src="../img/MusicStories-two/live (2).png" alt=""></div>
+          </li>
+          <!-- 八 -->
+          <li id="li" class="wow fadeIn" data-wow-delay=".9s">
+            <div class="imgg">
+              <img src="../img/MusicStories-two/content-8.png" alt="">
+              <audio controls="controls">
+                <source src="../music/Beyond-光辉岁月.flac" type="audio/mp3" />
+              Your browser does not support this audio format.
+              </audio>
+            </div>
+            <div class="text">
+              <div class="left">
+                <div class="title">
+                  Before the Sunrise
+                </div>
+                <span>Higher Borther</span>
+                <span>有时候我们在真实世界里丢失了一些东西，在梦里也许可以被找回。何晓河用最真实赤裸的梦境世界。这个梦境无比轻柔，像一张张柔软的毛毯</span>
+                <span><img src="../img/MusicStories-two/date.png" alt=""> 2017-12-25</span>
+              </div>
+              <div class="right">
+                <div class="img"><img src="../img/MusicStories-two/message2.png" alt=""></div>
+                <div><img src="../img/MusicStories-two/share2.png" alt=""></div>
+                <div><img src="../img/MusicStories-two/hot.png" alt=""></div>
+              </div>
+            </div>
+            <div class="live"><img src="../img/MusicStories-two/live (2).png" alt=""></div>
+          </li>
+          <!-- 九 -->
+          <li id="li" class="wow fadeIn" data-wow-delay="1s">
+            <div class="imgg">
+              <img src="../img/MusicStories-two/content-9.png" alt="">
+              <audio controls="controls">
+                <source src="../music/Beyond-光辉岁月.flac" type="audio/mp3" />
+              Your browser does not support this audio format.
+              </audio>
+            </div>
+            <div class="text">
+              <div class="left">
+                <div class="title">
+                  Flo Rida
+                </div>
+                <span>Higher Borther</span>
+                <span>有时候我们在真实世界里丢失了一些东西，在梦里也许可以被找回。何晓河用最真实赤裸的梦境世界。这个梦境无比轻柔，像一张张柔软的毛毯</span>
+                <span><img src="../img/MusicStories-two/date.png" alt=""> 2017-12-25</span>
+              </div>
+              <div class="right">
+                <div class="img"><img src="../img/MusicStories-two/message2.png" alt=""></div>
+                <div><img src="../img/MusicStories-two/share2.png" alt=""></div>
+                <div><img src="../img/MusicStories-two/hot.png" alt=""></div>
+              </div>
+            </div>
+            <div class="live"><img src="../img/MusicStories-two/live (2).png" alt=""></div>
+          </li>
+        </ul>
+        <div class="more">
+          <hr>
+          <div class="img"><img src="../img/polygon.png" alt=""></div>
+          <span>↓</span>
+        </div>
+      </div>
+    </div>
+    <!-- 页脚 -->
+  <div class="footer">
+    <div class="container">
+      <div class="display">
+        <!-- 一 -->
+        <div class="one">
+          <div class="title">
+            <img src="../img/logo.png" alt="">
+          </div>
+          <ul class="list">
+            <li><span>关于我们</span></li>
+            <li><span>联系我们</span></li>
+            <li><span>隐私政策</span></li>
+            <li><span>网络信息</span></li>
+            <li><span>侵权通知索引</span></li>
+          </ul>
+        </div>
+        <!-- 二 -->
+        <div class="two">
+          <div class="title">
+            <span>合作伙伴</span>
+          </div>
+            <ul class="list">
+              <li><div><img src="../img/cccc_03.jpg" alt=""><span>Ssing音乐</span></div> </li>
+              <li><div><img src="../img/bbbb_03.jpg" alt=""><span>酷狗音乐</span></div> </li>
+              <li><div><img src="../img/dddd_03.jpg" alt=""><span>QQ音乐</span></div> </li>
+              <li><div><img src="../img/aaaa_03.jpg" alt=""><span>虾米音乐</span></div> </li>
+            </ul>
+          
+        </div>
+        <!-- 三 -->
+        <div class="three">
+          <div class="title"><span>幻听客户端</span></div>
+          <ul class="list">
+            <li><span>幻听 for IPhone</span></li>
+            <li><span>幻听 for Andraid</span></li>
+            <li><span>幻听 for windows</span></li>
+            <li><span>幻听 for Mac</span></li>
+            <li><span>幻听 for IPad</span></li>
+          </ul>
+        </div>
+        <!-- 四 -->
+        <div class="four">
+          <div class="title"><span>更多</span></div>
+          <ul class="list">
+            <li>客户服务</li>
+            <li>服务条款</li>
+            <li>意见反馈</li>
+          </ul>
+        </div>
+        <!-- 五 -->
+        <div class="five">
+          <img src="../img/code_03.png" alt="">
+          <br>
+          <span>ios/Andraid下载</span>
+        </div>
+        <!-- 六 -->
+        <div class="six">
+          <img src="../img/code2_03.png" alt="">
+          <br>
+          <span>微信公众号</span>
+        </div>
+      </div>
+      <!-- 备案 -->
+      <div class="keep"><span>© 2017 Mafengwo.cn 京公网安备110105013401号 京ICP证110318号 营业执照 新出网证（京）</span></div>
+      <!-- 公司信息 -->
+      <div class="information">
+        <span>营业执照 新出网证（京）字242号 全国统一客服电话：022-4562-245  网站地图</span>
+        <span>幻听音乐公司版权所有©1997-2017天津文化有限公司</span>
+      </div>
+    </div>
+  </div>
+  <!-- 返回顶部 -->
+  <div class="goto-top">
+    <a href="#header"><span class="glyphicon glyphicon-plane"></span></a>
+  </div>
+    <script src="../JS/jquery-3.6.0.js"></script>
+    <script src="../JS/bootstrap.min.js"></script>
+    <script src="../JS/less@4.js"></script>
+    <script>
+      const li = document.querySelectorAll("#li")
+      const audio =document.querySelectorAll("#audio")
+      for(var i= 0 ;i<li.length;i++){
+        li[i].onmouseenter=function(){
+          this.children[0].children[1].play()
+          this.play()
+      }
+        li[i].onmouseleave=function(){
+          this.children[0].children[1].pause();
+          this.children[0].children[0].currentTime = 0;
+        }
+      }
+    </script>
+    <!-- 引入懒加载 -->
+      <script src="../wowjs/wowjs/wowjs代码/原版只能向下滚动wow.min.js"></script>
+      <script>
+        new WOW().init();
+      </script>
+</body>
+    
+    
+</html>

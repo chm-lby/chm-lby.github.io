@@ -1,0 +1,695 @@
+// 导航栏
+.sticky{
+    width: 100%;
+    background-color: #fff;
+}
+.navs{
+    height: 60px;
+    line-height: 60px;
+    li{
+        // width: 15%;
+        text-align: center;
+    }
+    li:nth-child(1){
+        // width: 10%;
+        text-align: left;
+        padding-left: 0;
+    }
+    .Selected{
+        color: #1db1f2;
+    }
+    a{
+        color: #000;
+    }
+    @media screen and (max-width:800px) {
+        padding: 0;
+            .item{
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                li{
+                    white-space: nowrap;
+                    // width: 20%;
+                }
+                li:nth-child(1){
+                    // width: 15% !important;
+                    text-align: left;
+                    padding-left: 0;
+                }
+                li:nth-child(3){
+                    // width: 15%;
+                    text-align: left;
+                    padding-left: 0;
+                }
+            } 
+    }
+}
+// banner
+.conent{
+    height: 520px;
+    &:hover{
+        cursor:pointer;
+    }
+    .banner{
+        width: 100%;
+        height: 410px;
+        position: relative;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        .tale-one{
+            width: 577px;
+            height: 410px;
+            background-color: #34d2fe;
+            border-radius: 8px;
+            position: absolute;
+            top: 30px;
+            left: 15%;
+            img{
+                width: 100%;
+                height: 100%;
+            }  
+        }
+        .tale-one-font{
+            position: absolute;
+            top: 135px;
+            left: 55%;
+            // left: 46%;
+            &:hover{
+                cursor:pointer;
+            }
+            .tale-one-font1{
+                width: 450px;
+                height: 130px;
+                img{
+                    width: 430px ;
+                    height: 110px ;
+                }
+                span{
+                    display: block;
+                    color: #fff;
+                    padding-left: 12px;
+                    padding-top: 2px;
+                }
+                .solid{
+                    width: 50px;
+                    height: 3px;
+                    background-color: #fff;
+                    margin-left: 12px;
+                    margin-top: 5px;
+                }
+                p{
+                    margin-top: 5px;
+                    margin-left: 12px; 
+                    font-weight: bold;
+                }
+            }
+        }
+    
+    }
+    .bottom{
+        height: 100px;
+        color: #9d9d9d;
+        .container{
+            height: 100%;
+            position: relative;
+        }
+        .icon1{
+            position: absolute;
+            top: 60px;
+            left: 1%;
+            span{
+                letter-spacing:2px;
+            }
+        }
+        .icon2{
+            position: absolute;
+            top: 60px;
+            left: 18%;
+            span{
+                letter-spacing:2px;
+            }
+        }
+        .icon3{
+            position: absolute;
+            top: 50px;
+            left: 57%;
+            span{
+                letter-spacing:2px;
+            }
+        }
+    }
+    @media screen and(max-width:1600px) {
+        .banner{
+            .tale-one{
+                left: 10%;
+            }
+        }
+    }
+    @media (max-width:1400px){
+
+            .banner{
+                .tale-one{
+                    width: 500px;
+                    height: 340px;
+                    top: 27%;
+                }
+                .tale-one-font{
+                    top: 40%;
+                    left: 55% ;
+                    z-index: 1;
+                }
+            }
+        }  
+    @media (max-width:1100px){
+            .banner{
+                .tale-one{
+                    display: none;
+                }
+                .tale-one-font{
+                    left: 10%;
+                }
+            }
+        }  
+    @media (max-width:1000px){
+        .container{
+            .icon1{
+                position: absolute;
+                top: 5px;
+                left: 6%;
+                span{
+                    letter-spacing:2px;
+                }
+            }
+            .icon2{
+                position: absolute;
+                top: 40px;
+                left: 6%;
+                span{
+                    letter-spacing:2px;
+                }
+            }
+            .icon3{
+                position: absolute;
+                top: 70px;
+                left: 6%;
+                span{
+                    letter-spacing:2px;
+                }
+            }
+            }
+          
+    }
+    
+    @media (max-width:768px) {
+        .navs{
+            padding-left: 15px;
+        }
+        .banner{
+            .tale-one{
+                display: none !important;
+            }
+            .tale-one-font{
+                top: 15%;
+                left: 2% !important;
+                z-index: 1;
+                .tale-one-font1{
+                    width: 350px;
+                    height: 110px;
+                }
+            }
+        }   
+    }
+    @media  (max-width:450px) {
+            .banner{
+                .tale-one-font{
+                    .tale-one-font1{
+                        img{
+                            width: 300px ;
+                            height: 70px ;
+                        }
+                        span{
+                            font-size: 0.8em;
+                            width: 60%;
+                        }
+                    }
+                }
+            }
+        }
+}
+
+// 中心
+.centre{
+    width: 100%;
+    padding-top:1% ;
+    background-color: #ebebf2;
+    padding-bottom: 5%;
+    .displady{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        .teletext{
+            width: 75%;
+            padding: 25px 15px;
+            background-color: #fff;
+            border-radius: 5px;
+            // 故事模块公共样式
+            // 标题
+            .title{
+                font-size: 1.3em;
+                padding-bottom: 3%;
+            }
+            // 蓝色字体
+            .bule-font{
+                padding: 0 5%;
+                color:#1db1f2;
+            }
+            // 灰色字体
+            .grey-font{
+                color: #9d9d9d;
+            }
+            
+        }
+    }
+    .sidebar{
+        width: 23%;
+        
+    }
+
+    @media screen and (max-width:700px) {
+        .displady{
+            flex-wrap: wrap;
+            .teletext{
+                width: 100%;
+            }
+        }
+        .sidebar{
+            width: 100%;
+            padding-top:10% ;
+        }
+    }
+}
+
+// 图文
+//第一个故事
+.teletext{
+    .tale-one{
+        width: 75%;
+        display: flex;
+        margin-bottom: 5%;
+        .img{
+            width: 60%;
+            &:hover{
+                cursor:pointer;
+            }
+        }
+        .text{
+            width: 32%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 2em;
+            .type{
+                text-align: right;
+                span{
+                    padding: 2%;
+                    background-color: #1db1f2;
+                    color: #fff;
+                }
+            }
+            &:hover{
+                cursor:pointer;
+            }
+        } 
+    }
+    // 第二个故事
+    .tale-two{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 5%;
+        .img{
+            width: 46%;
+            &:hover{
+                cursor:pointer;
+            }
+        }
+        .text{
+            width: 43%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-right: 3%;
+            p{
+                text-align: right;
+            }
+            .type{
+                text-align: center;
+                span{
+                    padding: 1%;
+                    background-color: #1db1f2;
+                    color: #fff;
+                    
+                }
+            }
+            &:hover{
+                cursor:pointer;
+            }
+        }
+    }
+    // 第三个故事
+    .tale-three{
+        width: 75%;
+        display: flex;
+        margin-bottom: 5%;
+        .img{
+            width: 60%;
+            &:hover{
+                cursor:pointer;
+            }
+        }
+        .text{
+            width: 32%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 2em;
+            .type{
+                text-align: right;
+                span{
+                    padding: 2%;
+                    background-color: #1db1f2;
+                    color: #fff;
+                }
+            }
+            &:hover{
+                cursor:pointer;
+            }
+        } 
+    }
+    // 第四个故事
+    .tale-four{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 5%;
+        .img{
+            width: 46%;
+            &:hover{
+                cursor:pointer;
+            }
+        }
+        .text{
+            width: 43%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-right: 3%;
+            p{
+                text-align: right;
+            }
+            .type{
+                text-align: center;
+                span{
+                    padding: 1%;
+                    background-color: #1db1f2;
+                    color: #fff;
+                    
+                }
+            }
+        }
+        &:hover{
+            cursor:pointer;
+        }
+    }
+    // 第五个故事
+    .tale-five{
+        width: 75%;
+        display: flex;
+        margin-bottom: 7%;
+        .img{
+            width: 60%;
+            &:hover{
+                cursor:pointer;
+            }
+        }
+        .text{
+            width: 32%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 2em;
+            .type{
+                text-align: right;
+                span{
+                    padding: 2%;
+                    background-color: #1db1f2;
+                    color: #fff;
+                }
+            }
+            &:hover{
+                cursor:pointer;
+            }
+        } 
+    }
+    // 底部更多
+    .more{
+        width: 50%;
+        margin: 0 auto;
+        hr{
+            margin-bottom: 0;
+        }
+        .back{
+            height: 2.5em;
+            background: url(../img/polygon.png) no-repeat bottom center;
+            text-align: center;
+        }
+        &:hover{
+            cursor:pointer;
+        }
+    }
+    // 公共样式
+    .style{
+        padding-bottom:15%
+    }
+    .lable{
+        padding-bottom:10%
+    }
+    @media screen and (max-width:826px) {
+        .tale-one,.tale-two,.tale-three,.tale-four,.tale-five{
+            width: 100%;
+            padding-bottom: 2em;
+            .img{
+                width: 65%;
+            }
+            .text{
+                width: 40%;
+            }
+        }
+    }
+    @media screen and (max-width:580px) {
+        .tale-one,.tale-two,.tale-three,.tale-four,.tale-five{
+            flex-wrap: wrap;
+            .img{
+                width: 100%;
+            }
+            .text{
+                width: 100%;
+                .type{
+                    text-align: right;
+                    padding-bottom: 10%;
+                }
+            }
+        }
+        .tale-one,.tale-three,.tale-five{
+            .text{
+                margin-top: 1.5em;
+            }
+        }
+        .style{
+            padding-bottom: 6%;
+        }
+        .lable{
+            padding-bottom: 5%;
+        }
+        .tale-one,.tale-three,.tale-five{
+            .text{
+                padding-left: 0;
+                .type{
+                    text-align: left;
+                }
+            }
+        }
+        .tale-two,.tale-four{
+            .img{
+                text-align: right;
+            }
+            
+            // padding-right: 4em;
+        }
+    }
+    
+}
+// 侧边栏
+.sidebar{
+    .container{
+        width: 100%;
+        // 用户
+        .user{
+            width: 100%;
+            text-align: center;
+            background-color: #fff;
+            padding: 15px 15px;
+            border-radius: 5px;
+            margin-bottom: 10%;
+            
+            .title{
+                margin-bottom: 8%;
+                span{
+                    display: inline-block;
+                    width: 1em;
+                    border-bottom: 1px solid #1db1f2;
+                    padding-bottom: -10px;
+                    height: 1em;
+
+                }
+                span:nth-child(2){
+                    display: inline;
+                    border: 1px solid #ccc;
+                    padding: .1em 1.2em;
+                }
+            }
+            .list{
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                li{
+                    width: 30%;
+                    display: flex;
+                    flex-direction: column;
+                    margin-bottom: .5em;
+                    span{
+                        font-size: .8em;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        padding-top: .3em;
+                    }
+                    &:hover{
+                        cursor:pointer;
+                    }
+                    
+                }
+            }
+            
+            
+        }
+        // 分类
+        .classify{
+            width: 100%;
+            text-align: center;
+            background-color: #fff;
+            padding: 15px 15px;
+            border-radius: 5px;
+            margin-bottom: 10%;
+            .title{
+                margin-bottom: 2%;
+                span{
+                    border-left: 1px solid #1db1f2;
+                }
+                span:nth-child(2){
+                    padding-left: 1em;
+                    letter-spacing: 1em;
+                    border: 0;
+
+                }
+            }
+            .remark{
+                width: 100%;
+                text-align: center;
+                font-size: 1px;
+                font-family: OSLtalic;
+                margin-bottom: 4%;
+                span{
+                    display: inline-block;
+                    width: 100%;
+                    font: 1px;
+                }
+            }
+            .list{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                margin-bottom: 2%;
+                
+                li{
+                    font-size: 0.5em;
+                    color: #9d9d9d;
+                    &:hover{
+                        color: #1db1f2;
+                    }
+                    span{
+                        padding: 2em .5em;
+                    }
+                    &:hover{
+                        cursor:pointer;
+                    }
+                }
+            }
+        }
+        //标签
+        .lable{
+            width: 100%;
+            text-align: center;
+            background-color: #fff;
+            padding: 15px 15px;
+            border-radius: 5px;
+            margin-bottom: 10%;
+            .title{
+                span{
+                    font-size: 1.5em;
+                    color: #1db1f2;
+                }
+
+            }
+            hr{
+                margin: 10px 0px;
+            }
+            .list{
+                color: #9d9d9d;
+                font-size: .8em;
+                .big{
+                    font-size: 1.5em;
+                }
+                .small{
+                    font-size: 1.2em;
+                }
+                span:hover{
+                    color: #1db1f2;
+                }
+                &:hover{
+                    cursor:pointer;
+                }
+            }
+        }
+        
+    }
+    @media screen and (max-width:860px) {
+        .container{
+            padding: 0;
+            .user{
+                .title{
+                    span{
+                        width: 10px;
+                    }
+                    span:nth-child(2){
+                        padding: .2em .1em;
+                    }
+                }
+            }
+        }
+    }
+}
+    

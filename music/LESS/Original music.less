@@ -1,0 +1,164 @@
+
+.navs{
+    height: 60px;
+    line-height: 60px;
+    li{
+        // width: 15%;
+        text-align: center;
+    }
+    li:nth-child(1){
+        // width: 10%;
+        text-align: left;
+        padding-left: 0;
+    }
+    .Selected{
+        color: #1db1f2;
+    }
+    a{
+        color: #000;
+    }
+    @media screen and (max-width:800px) {
+        padding: 0;
+            .item{
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                li{
+                    white-space: nowrap;
+                    // width: 20%;
+                }
+                li:nth-child(1){
+                    // width: 15% !important;
+                    text-align: left;
+                    padding-left: 0;
+                }
+                li:nth-child(3){
+                    // width: 15%;
+                    text-align: left;
+                    padding-left: 0;
+                }
+            } 
+    }
+}
+// 分类列表
+.list{
+    width: 100%;
+    background-color: #f0f1f2;
+    padding: 2em 0;
+    .item{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        li{
+            width: 24%;
+            background-color: #fff !important;
+            background: url("../img/Original music/background.png") no-repeat bottom left;
+            margin-bottom: 1em;
+            border-radius: 5px;
+            .title{
+                width: 100%;
+                position: relative;
+                .imags{
+                    width: 100%;
+                    img{
+                        width: 100%;
+                    }
+                }
+                .showbox{
+                    width: 100%;
+                    position: absolute;
+                    top: 70%;
+                    text-align: center;
+                    a{
+                        color: #fff;
+                        font-size: 1.4em;
+                        font-family: OSBold;
+                        span{
+                            background-color: rgba(15, 142, 206, .6);
+                            padding: .8em 4em;
+                        }
+                        &:hover{
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+
+            }
+            .content{
+                display: flex;
+                justify-content: space-between;
+                padding: 3.5em 1em 0em;
+                .left,.middle,.right{
+                    display: flex;
+                    flex-direction: column;
+                }
+                .left{
+                    letter-spacing: 1px;
+                    span:hover{
+                        color: #1db1f2;
+                    }
+                }
+                .middle{
+                    color: #999;
+                    span:hover{
+                        color: #1db1f2;
+                    }
+                }
+                .right{
+                    div{
+                        margin-bottom: 1.5em;
+                        font-size: .2em;
+                        span{
+                            margin-right: 2em;
+                            &:hover{
+                                color: #1db1f2;
+                            }
+                        }
+                    }
+                }
+            }
+            .more{
+                text-align: center;
+                font-size: 1.2em;
+                font-family: OSBolds;
+                width: 34%;
+                margin: 0 auto;
+                color: #1db1f2;
+                margin-bottom: 1em;
+                span{
+                    font-size: .5em;
+                }
+            }
+        }
+    }
+    @media screen and (max-width:980px){
+        .item{
+            li{
+                width: 32%;
+            }
+        }
+    }
+    @media screen and (max-width:755px){
+        .item{
+            li{
+                width: 49%;
+            }
+        }
+    }
+    @media screen and (max-width:510px){
+        .container{
+            padding: 0 8px;
+        }
+        .item{
+            justify-content: center;
+            li{
+                width: 100%;
+                .content{
+                    padding: 3.5em 1em 0em !important;
+                }
+            }
+        }
+        
+    }
+    
+}

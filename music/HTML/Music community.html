@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spirit8</title>
+    <!-- 引入bootstrap -->
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <!-- 引入动画样式 -->
+    <link rel="stylesheet" href="../wowjs/wowjs/animate/animate.min.css">
+    <!-- 引入重置样式 -->
+    <link rel="stylesheet" href="../CSS/reset.css">
+    <!-- 引入自己的样式 -->
+    <link rel="stylesheet/less" href="../LESS/Music community.less">
+    <!-- 引入公共样式 -->
+    <link rel="stylesheet/less" type="text/less" href="../LESS/header-footer.less">
+</head>
+<body>
+    <!-- 公共的头部导航 -->
+    <header class="navbar navbar-default header sticky" id="header">
+        <div class="container">
+          <!-- 移动端的三条线 -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <!-- logo -->
+            <a class="navbar-brand" href="#"><img src="../img/logo.png" alt=""></a>
+          </div>
+      
+         <!-- 左边导航栏 -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li ><a href="../index.html">发现</a></li>
+              <li ><a href="../HTML/MusicStories-two.html">我的音乐</a></li>
+              <li><a href="../HTML/Original music.html">分类</a></li>
+              <!-- 选中 -->
+              <li ><a href="../HTML/album.html">专辑</a></li>
+              <li class="Selected"><a href="#">音乐社区</a></li>
+              <li ><a href="./Music community.html">活动</a></li>
+              <li ><a href="#" >商城</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right user">
+              <li><a href="#" class="login">登录</a></li>
+              <li><a href="#">/</a></li>
+              <li><a href="#">注册</a></li>
+            </ul>
+            <form class="navbar-form navbar-left navbar-right">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="梦想的声音第二季">
+                <div class="Search-icon "><img src="../img/search_03.jpg" alt=""></div>
+              </div>
+            </form>
+
+          </div>
+        </div>
+    </header>
+    <!-- 导航栏 -->
+    <div class="container">
+        <nav class="container navs">
+          <ul class=" nav-pills item">
+            <li role="presentation" class="col-lg-1 col-md-2 "><a href="#chiner" class="Selected">演唱会</a></li>
+            <li role="presentation" class="col-lg-1 col-md-2"><a href="#oumei">音友圈</a></li>
+            <li role="presentation" class="col-lg-1 col-md-2"><a href="#rhan">歌星</a></li>
+          </ul>
+        </nav>
+    </div>
+
+    <!-- 选择栏 -->
+    <div class="choice">
+        <div class="container">
+          <div class="display">
+            <!-- 分类 -->
+            <div class="classify">
+              <div class="title"></div>
+              <ul class="list">
+                <li>摇滚</li>
+                <li  class="Selected">流行</li>
+                <li>嘻哈</li>
+                <li>民谣</li>
+              </ul>
+            </div>
+            <!-- 城市 -->
+            <div class="ciky">
+              <div class="title">城市</div>
+              <div class="list-more">
+                <ul class="list">
+                  <li  class="Selected">全部</li>
+                  <li>北京</li>
+                  <li>上海</li>
+                  <li>广州</li>
+                  <li>杭州</li>
+                  <li>成都</li>
+                  <li>天津</li>
+                  <li>深圳</li>
+                  <li>苏州</li>
+                  <li>重庆</li>
+                  <li>天津</li>
+                  <li>武汉</li>
+                  <li>大连</li>
+                  <li>南京</li>
+                  <li>苏州</li>
+                  <li>宁波</li>
+                </ul>
+                <ul class="more">
+                  <span>更多</span><span class="glyphicon glyphicon-chevron-down"></span>
+                </ul>
+              </div>
+              
+            </div>
+            <!-- 时间 -->
+            <div class="data">
+              <div class="title">时间</div>
+              <div class="data-time">
+                <ul class="left">
+                  <li  class="Selected">今天</li>
+                  <li>明天</li>
+                  <li>本周末</li>
+                  <li>本月内</li>
+                </ul>
+                <ul class="right">
+                  <li>按时间段 <input type="time"></li>
+                  <li><input type="month">按日历</li>
+                </ul>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- 推荐栏 -->
+    <div class="recommend">
+      <div class="container">
+        <ul class="list">
+          <li><a href="#">相关度排序</a> </li>
+          <li class="active"><a href="#">推荐排序</a></li>
+          <li><a href="#">最新排序</a></li>
+          <li><a href="#">最新上架</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 演唱会 -->
+    <div class="concert">
+      <div class="container">
+        <div class="display">
+          <!-- 场次 -->
+        <div class="Sessions">
+          <!-- 第一场 -->
+          <div class="one wow bounceOutLeft" data-wow-delay="1s">
+            <div class="images">
+              <img src="../img/Music community/img1.jpg" alt="">
+            </div>
+            <div class="text">
+              <span class="title">【长沙】 【万有音乐系】My Song--Sophie Zelm   ani苏菲·珊曼妮2018巡回演唱会-长沙站</span>
+              <span class="name">艺人：苏菲·珊曼妮</span>
+              <span class="data">日期：2018.06.27</span>
+              <span class="place">地点：湖南大剧院-长沙</span>
+              <span class="price">100-380元<span>售票中</span> </span>
+              <span class="ticket">电子票<a href="#">购买</a></span>
+            </div>
+          </div>
+          <!-- 第二场 -->
+          <div class="two wow bounceOutRight" >
+            <div class="text">
+              <span class="title">2018林忆莲PRANAVA/造乐者世界巡回演唱会EN CORE</span>
+              <span class="name">艺人：林忆莲</span>
+              <span class="data">日期：2018-01-13 19:30:00</span>
+              <span class="place">地点：天津体育中心（大馆）</span>
+              <span class="price"><span>售票中</span>580元 </span>
+              <span class="ticket"><a href="#">购买</a>电子票</span>
+            </div>
+            <div class="images">
+              <img src="../img/Music community/img2.jpg" alt="">
+            </div>
+          </div>
+          <!-- 第三场 -->
+          <div class="three wow bounceOutLeft" >
+            <div class="images">
+              <img src="../img/Music community/img3.jpg" alt="">
+            </div>
+            <div class="text">
+              <span class="title">2017-2018朴树“好好地Ⅱ”巡回演唱会-北 京站</span>
+              <span class="name">艺人：朴树</span>
+              <span class="data">日期：2018-02-10 19:00:00</span>
+              <span class="place">地点：凯迪拉克中心</span>
+              <span class="price">100-380元<span>售票中</span> </span>
+              <span class="ticket">电子票<a href="#">购买</a></span>
+            </div>
+          </div>
+          <!-- 第四场 -->
+          <div class="four wow bounceOutRight" >
+            <div class="text">
+              <span class="title">【武汉】敢想Party 2    致敬偶像，五月天音  乐作品庆生派对</span>
+              <span class="name">艺人：五月天</span>
+              <span class="data">日期：2018.06.27</span>
+              <span class="place">地点：纽宾凯汉City国际社区•非凡之星小剧场•武汉</span>
+              <span class="price"><span>售票中</span>380元 </span>
+              <span class="ticket"><a href="#">购买</a>电子票</span>
+            </div>
+            <div class="images">
+              <img src="../img/Music community/img4.jpg" alt="">
+            </div>
+          </div>
+          <!-- 第五场 -->
+          <div class="five wow bounceOutLeft">
+            <div class="images">
+              <img src="../img/Music community/img5.jpg" alt="">
+            </div>
+            <div class="text">
+              <span class="title">【杭州】澈心之痛The Pains of Being Pure  at Heart 新专辑中国巡演 杭州站</span>
+              <span class="name">艺人：Prre at Heart </span>
+              <span class="data">日期：2018-01-27</span>
+              <span class="place">地点：MAOLivehouse杭州-杭州站</span>
+              <span class="price">120元<span>售票中</span> </span>
+              <span class="ticket">电子票<a href="#">购买</a></span>
+            </div>
+          </div>
+          <!-- 第六场 -->
+          <div class="six wow bounceOutRight">
+            <div class="text">
+              <span class="title">《月亮代表我的心》 邓丽君金曲杨洁2018巡回巡回演唱会</span>
+              <span class="name">艺人：邓丽君</span>
+              <span class="data">日期：2018.01.02 20：00</span>
+              <span class="place">地点：星海音乐厅-广州</span>
+              <span class="price"><span>售票中</span>100-380元 </span>
+              <span class="ticket"><a href="#">购买</a>电子票</span>
+            </div>
+            <div class="images">
+              <img src="../img/Music community/img6.jpg" alt="">
+            </div>
+          </div>
+          <!-- 第七场 -->
+          <div class="seven wow bounceOutLeft">
+            <div class="images">
+              <img src="../img/Music community/img7.jpg" alt="">
+            </div>
+            <div class="text">
+              <span class="title">【西安】赵照 2017“观照”新专辑全国巡演   加站 西安站加入我们的音乐派对</span>
+              <span class="name">艺人：赵照</span>
+              <span class="data">日期：2017.12.29 20:30</span>
+              <span class="place">地点：西安光圈CLUB - 西安</span>
+              <span class="price">100-150元<span>售票中</span> </span>
+              <span class="ticket">电子票<a href="#">购买</a></span>
+            </div>
+          </div>
+          <!-- 第八场 -->
+          <div class="eight wow bounceOutRight" >
+            <div class="text">
+              <span class="title">【湛江】[A CLASSIC TOUR 学友·经典]世界巡回   演唱会 湛江站</span>
+              <span class="name">艺人: 张学友</span>
+              <span class="data">日期：2018.03.24 19:50</span>
+              <span class="place">地点：湛江奥体中心体育场 - 湛江</span>
+              <span class="price"><span>售票中</span>380-1580元 </span>
+              <span class="ticket"><a href="#">购买</a>电子票</span>
+            </div>
+            <div class="images">
+              <img src="../img/Music community/img8.jpg" alt="">
+            </div>
+          </div>
+          <!-- 更多 -->
+          <div class="more">
+            <nav aria-label="...">
+              <ul class="pagination">
+                <li class="disabled">
+                  <span>
+                    <span aria-hidden="true">&laquo;</span>
+                  </span>
+                </li>
+                <li class="active">
+                  <span>1 <span class="sr-only">(current)</span></span>
+                </li>
+                <li >
+                  <span>2 <span class="sr-only">(current)</span></span>
+                </li>
+                <li >
+                  <span>3 <span class="sr-only">(current)</span></span>
+                </li>
+                <li >
+                  <span>4 <span class="sr-only">(current)</span></span>
+                </li>
+                <li class="disabled">
+                  <span>
+                    <span aria-hidden="true">&raquo;</span>
+                  </span>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <!-- 侧边栏 -->
+        <div class="sidebar">
+          <div class="container">
+            <div class="title">
+              你还可能喜欢
+            </div>
+            <ul class="list">
+              <!-- 一 -->
+              <li>
+                <div class="images">
+                  <img src="../img/Music community/img-2-1.png" alt="">
+                </div>
+                <div class="text">
+                  <span class="top">
+                    刘思涵2017巡回演唱会
+                  </span>
+                  <span class="name">艺人：刘思涵</span>
+                  <span class="data">日期：2017.12.30 20：30</span>
+                  <span class="place">地点：TU凸空间-广州</span>
+                  <span class="price"> 150-200<span>售票中</span></span>
+                </div>
+              </li>
+              <!-- 二 -->
+              <li>
+                <div class="images">
+                  <img src="../img/Music community/img-2-2.png" alt="">
+                </div>
+                <div class="text">
+                  <span class="top">
+                    曲婉婷2018巡回演唱会
+                  </span>
+                  <span class="name">艺人：曲婉婷</span>
+                  <span class="data">日期：2018.03.03.20：00</span>
+                  <span class="place">地地点：多伦多歌剧院</span>
+                  <span class="price"> 480-960<span>售票中</span></span>
+                </div>
+              </li>
+              <!-- 三 -->
+              <li>
+                <div class="images">
+                  <img src="../img/Music community/img-2-3.png" alt="">
+                </div>
+                <div class="text">
+                  <span class="top">
+                    Twins 世界巡回演唱会
+                  </span>
+                  <span class="name">艺人：Twins</span>
+                  <span class="data">日期：2018.01.27</span>
+                  <span class="place">地点：武汉体育中心体育馆</span>
+                  <span class="price"> 380-1280<span>售票中</span></span>
+                </div>
+              </li>
+              <!-- 四 -->
+              <li>
+                <div class="images">
+                  <img src="../img/Music community/img-2-4.png" alt="">
+                </div>
+                <div class="text">
+                  <span class="top">
+                    庄心妍全国巡回演唱会
+                  </span>
+                  <span class="name">艺人：庄心妍</span>
+                  <span class="data">日期：2017.12.30</span>
+                  <span class="place">地点：武汉体育中心体育馆</span>
+                  <span class="price">288-888<span>售票中</span></span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        </div>
+        
+      </div>
+    </div>
+    
+    <!-- 页脚 -->
+  <div class="footer">
+    <div class="container">
+      <div class="display">
+        <!-- 一 -->
+        <div class="one">
+          <div class="title">
+            <img src="../img/logo.png" alt="">
+          </div>
+          <ul class="list">
+            <li><span>关于我们</span></li>
+            <li><span>联系我们</span></li>
+            <li><span>隐私政策</span></li>
+            <li><span>网络信息</span></li>
+            <li><span>侵权通知索引</span></li>
+          </ul>
+        </div>
+        <!-- 二 -->
+        <div class="two">
+          <div class="title">
+            <span>合作伙伴</span>
+          </div>
+            <ul class="list">
+              <li><div><img src="../img/cccc_03.jpg" alt=""><span>Ssing音乐</span></div> </li>
+              <li><div><img src="../img/bbbb_03.jpg" alt=""><span>酷狗音乐</span></div> </li>
+              <li><div><img src="../img/dddd_03.jpg" alt=""><span>QQ音乐</span></div> </li>
+              <li><div><img src="../img/aaaa_03.jpg" alt=""><span>虾米音乐</span></div> </li>
+            </ul>
+          
+        </div>
+        <!-- 三 -->
+        <div class="three">
+          <div class="title"><span>幻听客户端</span></div>
+          <ul class="list">
+            <li><span>幻听 for IPhone</span></li>
+            <li><span>幻听 for Andraid</span></li>
+            <li><span>幻听 for windows</span></li>
+            <li><span>幻听 for Mac</span></li>
+            <li><span>幻听 for IPad</span></li>
+          </ul>
+        </div>
+        <!-- 四 -->
+        <div class="four">
+          <div class="title"><span>更多</span></div>
+          <ul class="list">
+            <li>客户服务</li>
+            <li>服务条款</li>
+            <li>意见反馈</li>
+          </ul>
+        </div>
+        <!-- 五 -->
+        <div class="five">
+          <img src="../img/code_03.png" alt="">
+          <br>
+          <span>ios/Andraid下载</span>
+        </div>
+        <!-- 六 -->
+        <div class="six">
+          <img src="../img/code2_03.png" alt="">
+          <br>
+          <span>微信公众号</span>
+        </div>
+      </div>
+      <!-- 备案 -->
+      <div class="keep"><span>© 2017 Mafengwo.cn 京公网安备110105013401号 京ICP证110318号 营业执照 新出网证（京）</span></div>
+      <!-- 公司信息 -->
+      <div class="information">
+        <span>营业执照 新出网证（京）字242号 全国统一客服电话：022-4562-245  网站地图</span>
+        <span>幻听音乐公司版权所有©1997-2017天津文化有限公司</span>
+      </div>
+    </div>
+  </div>
+      <script src="../JS/jquery-3.6.0.js"></script>
+      <script src="../JS/bootstrap.min.js"></script>
+      <script src="../JS/less@4.js"></script>
+      <!-- 引入懒加载 -->
+      <script src="../wowjs/wowjs/wowjs代码/原版只能向下滚动wow.min.js"></script>
+      <script>
+        new WOW().init();
+      </script>
+  </body>
+  </html>

@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spirit8</title>
+    <!-- 引入bootstrap -->
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <!-- 引入动画样式 -->
+    <link rel="stylesheet" href="../wowjs/wowjs/animate/animate.min.css">
+    <!-- 引入重置样式 -->
+    <link rel="stylesheet" href="../CSS/reset.css">
+    <!-- 引入自己的样式 -->
+    <link rel="stylesheet/less" href="../LESS/album.less">
+    <!-- 引入公共样式 -->
+    <link rel="stylesheet/less" type="text/less" href="../LESS/header-footer.less">
+</head>
+<body>
+    <!-- 公共的头部导航 -->
+    <header class="navbar navbar-default header sticky" id="header">
+        <div class="container">
+          <!-- 移动端的三条线 -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <!-- logo -->
+            <a class="navbar-brand" href="#"><img src="../img/logo.png" alt=""></a>
+          </div>
+      
+         <!-- 左边导航栏 -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li ><a href="../index.html">发现</a></li>
+              <li ><a href="../HTML/MusicStories-two.html">我的音乐</a></li>
+              <li><a href="../HTML/Original music.html">分类</a></li>
+              <!-- 选中 -->
+              <li class="Selected"><a href="../HTML/album.html">专辑</a></li>
+              <li><a href="./Music community.html">音乐社区</a></li>
+              <li><a href="#">活动</a></li>
+              <li><a href="#">商城</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right user">
+              <li><a href="#" class="login">登录</a></li>
+              <li><a href="#">/</a></li>
+              <li><a href="#">注册</a></li>
+            </ul>
+            <form class="navbar-form navbar-left navbar-right">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="梦想的声音第二季">
+                <div class="Search-icon "><img src="../img/search_03.jpg" alt=""></div>
+              </div>
+            </form>
+
+          </div>
+        </div>
+    </header>
+    <!-- 导航栏 -->
+    <div class="container">
+        <nav class="container navs">
+          <ul class=" nav-pills item">
+            <li role="presentation" class="col-lg-1 col-md-2 "><a href="#chiner" class="Selected">华语音乐</a></li>
+            <li role="presentation" class="col-lg-1 col-md-2"><a href="#oumei" >欧美音乐</a></li>
+            <li role="presentation" class="col-lg-1 col-md-2"><a href="#rhan">日韩音乐</a></li>
+          </ul>
+        </nav>
+      </div>
+    
+    
+    <!-- 华语音乐 -->
+    <div class="list" id="chiner">
+        <div class="container">
+            <div class="title"><div class="left"><img src="../img/album/huayu.png" alt="">华语</div><div class="right"><img src="../img/album/jiantou.png" alt=""></div></div>
+            <ul class="item">
+                <!-- 第一个 -->
+                <li class="wow fadeIn" data-wow-delay=".2s" >
+                    <div class="imags"><img src="../img/album/img-3-1.png" alt=""></div>
+                    
+                    <div class="text">
+                        <div class="name">逆流成河 </div>
+                        <div class="singer">歌手：金南玲</div>
+                        <div class="data">发行时间：2017年12月27日</div>
+                        <div class="live">收藏<span>561</span></div>
+                        <div class="shop">￥5 <a href="#">购买</a></div>
+                    </div>
+                </li>
+                <!-- 第二个 -->
+                <li class="wow fadeIn" data-wow-delay=".3s">
+                    <div class="imags"><img src="../img/album/img-3-2.png" alt=""></div>
+                    <div class="text">
+                        <div class="name">预谋邂逅</div>
+                        <div class="singer">歌手：阿肆</div>
+                        <div class="data">发行时间：2017年12月27日</div>
+                        <div class="live">收藏<span>73</span></div>
+                        <div class="shop">￥8 <a href="#">购买</a></div>
+                    </div>
+                </li>
+                <!-- 第三个 -->
+                <li class="wow fadeIn" data-wow-delay=".4s">
+                    <div class="imags"><img src="../img/album/img3-3.png" alt=""></div>
+                    <div class="text">
+                        <div class="name">私房歌</div>
+                        <div class="singer">歌手：刘瑞琦</div>
+                        <div class="data">发行时间：2017年12月26日</div>
+                        <div class="live">收藏<span>28</span></div>
+                        <div class="shop">￥5 <a href="#">购买</a></div>
+                    </div>
+                </li>
+                <!-- 第四个 -->
+                <li class="wow fadeIn" data-wow-delay=".5s">
+                    <div class="imags"><img src="../img/album/img-3-4.png" alt=""></div>
+                    <div class="text">
+                        <div class="name">我想和你虚度时光</div>
+                        <div class="singer">歌手：程璧</div>
+                        <div class="data">发行时间：2017年12月27日</div>
+                        <div class="live">收藏<span>156</span></div>
+                        <div class="shop">￥5 <a href="#">购买</a></div>
+                    </div>
+                </li>
+                <!-- 第五个 -->
+                <li class="wow fadeIn" data-wow-delay=".6s">
+                    <div class="imags"><img src="../img/album/img-3-5.png" alt=""></div>
+                    <div class="text">
+                        <div class="name">大鱼</div>
+                        <div class="singer">歌手：周深</div>
+                        <div class="data">发行时间：2017年12月27日</div>
+                        <div class="live">收藏<span>20</span></div>
+                        <div class="shop">￥28 <a href="#">购买</a></div>
+                    </div>
+                </li>
+                <!-- 第六个 -->
+                <li class="wow fadeIn" data-wow-delay=".7s">
+                    <div class="imags"><img src="../img/album/img-3-6.png" alt=""></div>
+                    <div class="text">
+                        <div class="name">追梦痴子心 </div>
+                        <div class="singer">歌手：GALA</div>
+                        <div class="data">发行时间：2017年12月27日</div>
+                        <div class="live">收藏<span>35</span></div>
+                        <div class="shop">￥5 <a href="#">购买</a></div>
+                    </div>
+                </li>
+                <!-- 第七个 -->
+                <li class="wow fadeIn" data-wow-delay=".8s">
+                    <div class="imags"><img src="../img/album/img-3-7.png" alt=""></div>
+                    <div class="text">
+                        <div class="name">发光的海</div>
+                        <div class="singer">歌手：Apink</div>
+                        <div class="data">发行时间：2017年12月27日</div>
+                        <div class="live">收藏<span>252</span></div>
+                        <div class="shop">￥26 <a href="#">购买</a></div>
+                    </div>
+                </li>
+                <!-- 第八个 -->
+                <li class="wow fadeIn" data-wow-delay=".9s">
+                    <div class="imags"><img src="../img/album/img-3-8.png" alt=""></div>
+                    <div class="text">
+                        <div class="name">如也</div>
+                        <div class="singer">歌手：陈粒</div>
+                        <div class="data">发行时间：2017年12月27日</div>
+                        <div class="live">收藏<span>43</span></div>
+                        <div class="shop">￥12 <a href="#">购买</a></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 欧美音乐 -->
+    <div class="list" id="oumei">
+        <div class="container">
+            <div class="title"><div class="left"><img src="../img/album/huayu.png" alt="">欧美</div><div class="right"><img src="../img/album/jiantou.png" alt=""></div></div>
+            <ul class="item">
+                <!-- 第一个 -->
+                <li class="wow fadeIn" data-wow-delay=".2s">
+                    <div class="imags"><img src="../img/album/img-2-1.png" alt=""></div>
+                    <div class="text">
+                        <div class="name">Happy扭腰</div>
+                        <div class="singer">歌手：南征北战nzbz</div>
+                        <div class="data">发行时间：2017年12月27日</div>
+                        <div class="live">收藏<span>76</span></div>
+                        <div class="shop">￥22 <a href="#">购买</a></div>
+                    </div>
+                </li>
+                <!-- 第二个 -->
+                <li class="wow fadeIn" data-wow-delay=".3s">
+                    <div class="imags"><img src="../img/album/img-2-2.png" alt=""></div>
+                    <div class="text">
+                        <div class="name">demoA</div>
+                        <div class="singer">歌手：宁夏</div>
+                        <div class="data">发行时间：2017年12月27日</div>
+                        <div class="live">收藏<span>28</span></div>
+                        <div class="shop">￥18 <a href="#">购买</a></div>
+                    </div>
+                </li>
+                <!-- 第三个 -->
+                <li class="wow fadeIn" data-wow-delay=".4s">
+                    <div class="imags"><img src="../img/album/img-2-3.png" alt=""></div>
+                    <div class="text">
+                        <div class="name">叙述</div>
+                        <div class="singer">歌手：张信哲</div>
+                        <div class="data">发行时间：2017年12月26日</div>
+                        <div class="live">收藏<span>93</span></div>
+                        <div class="shop">￥35 <a href="#">购买</a></div>
+                    </div>
+                </li>
+                <!-- 第四个 -->
+                <li class="wow fadeIn" data-wow-delay=".5s">
+                    <div class="imags"><img src="../img/album/img-2-4.png" alt=""></div>
+                    <div class="text">
+                        <div class="name">Bad Angel 2.1</div>
+                        <div class="singer">歌手：江映蓉</div>
+                        <div class="data">发行时间：2017年12月27日</div>
+                        <div class="live">收藏<span>128</span></div>
+                        <div class="shop">￥35 <a href="#">购买</a></div>
+                    </div>
+                </li>
+                <!-- 第五个 -->
+                <li class="wow fadeIn" data-wow-delay=".6s">
+                    <div class="imags"><img src="../img/album/img-2-5.png" alt=""></div>
+                    <div class="text">
+                        <div class="name">Best Regards</div>
+                        <div class="singer">歌手：渡辺麻友</div>
+                        <div class="data">发行时间：2017年12月27日</div>
+                        <div class="live">收藏<span>186</span></div>
+                        <div class="shop">￥28 <a href="#">购买</a></div>
+                    </div>
+                </li>
+                <!-- 第六个 -->
+                <li class="wow fadeIn" data-wow-delay=".7s">
+                    <div class="imags"><img src="../img/album/img-2-6.png" alt=""></div>
+                    <div class="text">
+                        <div class="name">instagram</div>
+                        <div class="singer">歌手：DEAN</div>
+                        <div class="data">发行时间：2017年12月27日</div>
+                        <div class="live">收藏<span>228</span></div>
+                        <div class="shop">￥24 <a href="#">购买</a></div>
+                    </div>
+                </li>
+                <!-- 第七个 -->
+                <li class="wow fadeIn" data-wow-delay=".8s">
+                    <div class="imags"><img src="../img/album/img-2-7.png" alt=""></div>
+                    <div class="text">
+                        <div class="name">Universe-Winter </div>
+                        <div class="singer">歌手：EXO</div>
+                        <div class="data">发行时间：2017年12月27日</div>
+                        <div class="live">收藏<span>31855</span></div>
+                        <div class="shop">￥26 <a href="#">购买</a></div>
+                    </div>
+                </li>
+                <!-- 第八个 -->
+                <li class="wow fadeIn" data-wow-delay=".9s">
+                    <div class="imags"><img src="../img/album/img-2-8.png" alt=""></div>
+                    <div class="text">
+                        <div class="name">无问</div>
+                        <div class="singer">歌手：毛不易</div>
+                        <div class="data">发行时间：2017年12月27日</div>
+                        <div class="live">收藏<span>2343</span></div>
+                        <div class="shop">￥22 <a href="#">购买</a></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+     <!-- 日韩音乐 -->
+     <div class="list" id="rhan">
+        <div class="container">
+            <div class="title"><div class="left"><img src="../img/album/huayu.png" alt="">华语</div><div class="right"><img src="../img/album/jiantou.png" alt=""></div></div>
+            <ul class="item">
+                <!-- 第一个 -->
+                <li class="wow fadeIn" data-wow-delay=".2s">
+                    <div class="imags"><img src="../img/album/img1.png" alt=""></div>
+                    <div class="text">
+                        <div class="name">Perfect(Cadillac X </div>
+                        <div class="singer">歌手：东圃</div>
+                        <div class="data">发行时间：2017年12月27日</div>
+                        <div class="live">收藏<span>81</span></div>
+                        <div class="shop">￥15 <a href="#">购买</a></div>
+                    </div>
+                </li>
+                <!-- 第二个 -->
+                <li class="wow fadeIn" data-wow-delay=".3s">
+                    <div class="imags"><img src="../img/album/img2.png" alt=""></div>
+                    <div class="text">
+                        <div class="name">RescuE</div>
+                        <div class="singer">歌手：Younha</div>
+                        <div class="data">发行时间：2017年12月27日</div>
+                        <div class="live">收藏<span>189</span></div>
+                        <div class="shop">￥18 <a href="#">购买</a></div>
+                    </div>
+                </li>
+                <!-- 第三个 -->
+                <li class="wow fadeIn" data-wow-delay=".4s">
+                    <div class="imags"><img src="../img/album/img3.png" alt=""></div>
+                    <div class="text">
+                        <div class="name">널 맞이할 준비</div>
+                        <div class="singer">歌手：U-Kiss</div>
+                        <div class="data">发行时间：2017年12月26日</div>
+                        <div class="live">收藏<span>68</span></div>
+                        <div class="shop">￥22 <a href="#">购买</a></div>
+                    </div>
+                </li>
+                <!-- 第四个 -->
+                <li class="wow fadeIn" data-wow-delay=".5s">
+                    <div class="imags"><img src="../img/album/img4.png" alt=""></div>
+                    <div class="text">
+                        <div class="name">Mars Baby</div>
+                        <div class="singer">歌手：陶喆</div>
+                        <div class="data">发行时间：2017年12月27日</div>
+                        <div class="live">收藏<span>156</span></div>
+                        <div class="shop">￥30 <a href="#">购买</a></div>
+                    </div>
+                </li>
+                <!-- 第五个 -->
+                <li class="wow fadeIn" data-wow-delay=".6s">
+                    <div class="imags"><img src="../img/album/img5.png" alt=""></div>
+                    <div class="text">
+                        <div class="name">目立里</div>
+                        <div class="singer">歌手：瞳乐队</div>
+                        <div class="data">发行时间：2017年12月27日</div>
+                        <div class="live">收藏<span>20</span></div>
+                        <div class="shop">￥28 <a href="#">购买</a></div>
+                    </div>
+                </li>
+                <!-- 第六个 -->
+                <li class="wow fadeIn" data-wow-delay=".7s">
+                    <div class="imags"><img src="../img/album/img6.png" alt=""></div>
+                    <div class="text">
+                        <div class="name">小团圆</div>
+                        <div class="singer">歌手：SNH48</div>
+                        <div class="data">发行时间：2017年12月27日</div>
+                        <div class="live">收藏<span>35</span></div>
+                        <div class="shop">￥18 <a href="#">购买</a></div>
+                    </div>
+                </li>
+                <!-- 第七个 -->
+                <li class="wow fadeIn" data-wow-delay=".8s">
+                    <div class="imags"><img src="../img/album/img7.png" alt=""></div>
+                    <div class="text">
+                        <div class="name">Pink Stories</div>
+                        <div class="singer">歌手：Apink</div>
+                        <div class="data">发行时间：2017年12月27日</div>
+                        <div class="live">收藏<span>252</span></div>
+                        <div class="shop">￥26 <a href="#">购买</a></div>
+                    </div>
+                </li>
+                <!-- 第八个 -->
+                <li class="wow fadeIn" data-wow-delay=".9s">
+                    <div class="imags"><img src="../img/album/img8.png" alt=""></div>
+                    <div class="text">
+                        <div class="name">节拍器</div>
+                        <div class="singer">歌手：MooLii</div>
+                        <div class="data">发行时间：2017年12月27日</div>
+                        <div class="live">收藏<span>43</span></div>
+                        <div class="shop">￥12 <a href="#">购买</a></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 页脚 -->
+    <div class="footer">
+        <div class="container">
+          <div class="display">
+            <!-- 一 -->
+            <div class="one">
+              <div class="title">
+                <img src="../img/logo.png" alt="">
+              </div>
+              <ul class="list">
+                <li><span>关于我们</span></li>
+                <li><span>联系我们</span></li>
+                <li><span>隐私政策</span></li>
+                <li><span>网络信息</span></li>
+                <li><span>侵权通知索引</span></li>
+              </ul>
+            </div>
+            <!-- 二 -->
+            <div class="two">
+              <div class="title">
+                <span>合作伙伴</span>
+              </div>
+                <ul class="list">
+                  <li><div><img src="../img/cccc_03.jpg" alt=""><span>Ssing音乐</span></div> </li>
+                  <li><div><img src="../img/bbbb_03.jpg" alt=""><span>酷狗音乐</span></div> </li>
+                  <li><div><img src="../img/dddd_03.jpg" alt=""><span>QQ音乐</span></div> </li>
+                  <li><div><img src="../img/aaaa_03.jpg" alt=""><span>虾米音乐</span></div> </li>
+                </ul>
+              
+            </div>
+            <!-- 三 -->
+            <div class="three">
+              <div class="title"><span>幻听客户端</span></div>
+              <ul class="list">
+                <li><span>幻听 for IPhone</span></li>
+                <li><span>幻听 for Andraid</span></li>
+                <li><span>幻听 for windows</span></li>
+                <li><span>幻听 for Mac</span></li>
+                <li><span>幻听 for IPad</span></li>
+              </ul>
+            </div>
+            <!-- 四 -->
+            <div class="four">
+              <div class="title"><span>更多</span></div>
+              <ul class="list">
+                <li>客户服务</li>
+                <li>服务条款</li>
+                <li>意见反馈</li>
+              </ul>
+            </div>
+            <!-- 五 -->
+            <div class="five">
+              <img src="../img/code_03.png" alt="">
+              <br>
+              <span>ios/Andraid下载</span>
+            </div>
+            <!-- 六 -->
+            <div class="six">
+              <img src="../img/code2_03.png" alt="">
+              <br>
+              <span>微信公众号</span>
+            </div>
+          </div>
+          <!-- 备案 -->
+          <div class="keep"><span>© 2017 Mafengwo.cn 京公网安备110105013401号 京ICP证110318号 营业执照 新出网证（京）</span></div>
+          <!-- 公司信息 -->
+          <div class="information">
+            <span>营业执照 新出网证（京）字242号 全国统一客服电话：022-4562-245  网站地图</span>
+            <span>幻听音乐公司版权所有©1997-2017天津文化有限公司</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 返回顶部 -->
+      <div class="goto-top">
+        <a href="#header"><span class="glyphicon glyphicon-plane"></span></a>
+      </div>
+      <script src="../JS/jquery-3.6.0.js"></script>
+      <script src="../JS/bootstrap.min.js"></script>
+      <script src="../JS/less@4.js"></script>
+      <!-- 引入懒加载 -->
+      <script src="../wowjs/wowjs/wowjs代码/原版只能向下滚动wow.min.js"></script>
+      <script>
+        new WOW().init();
+      </script>
+  </body>
+  </html>
